@@ -42,7 +42,7 @@ class MainHomePlugin extends PMMPCore{
         if(!is_dir( $file = $this->getServer()->getDataPath() . 'config')){
             @mkdir( $file = $this->getServer()->getDataPath() . 'config');
         }
-        $config = new Config($file . 'config.yml');
+        $config = new Config($file . DIRECTORY_SEPARATOR .  'config.yml');
         $config = $config->getAll();
         @mkdir( $file = $this->getServer()->getDataPath() . 'config');
 
@@ -97,7 +97,7 @@ class MainHomePlugin extends PMMPCore{
 
                         foreach (self::$homes as $name => $instance) {
                             $file = $this->getServer()->getDataPath() . 'config';
-                            $config = new Config($file . 'config.yml');
+                            $config = new Config($file . DIRECTORY_SEPARATOR . 'config.yml');
 
                             $config->set($name, array(
                                 'owner' => $sender instanceof Player ? $sender->getName() : "",
