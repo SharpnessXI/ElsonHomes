@@ -95,6 +95,7 @@ class MainHomePlugin extends PMMPCore{
                         self::$homes[ $homeName ] = $homeInstance;
 
 
+                        // $sender->getOffsetPosition() to get offsets for memory later
                         foreach (self::$homes as $name => $instance) {
                             $file = $this->getServer()->getDataPath() . 'config';
                             $config = new Config($file . DIRECTORY_SEPARATOR . 'config.yml');
