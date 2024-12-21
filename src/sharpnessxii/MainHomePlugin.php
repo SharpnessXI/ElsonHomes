@@ -75,7 +75,7 @@ class MainHomePlugin extends PMMPCore{
                     if (isset(self::$homes[ $homeName ])) {
                         $home = self::$homes[ $homeName ];
                         $sender->sendMessage("Teleporting to home: " . $homeName);
-                        $sender->teleport(VECTORUTILITIES::positionToVector($home->stringVector($home->getVec())));
+                        $sender->teleport($home->stringVector($home->getVec()));
                         var_dump("Player may be exploting Ensure home is correct");
                     } else {
                         $sender->sendMessage("Home not found: " . $homeName);
