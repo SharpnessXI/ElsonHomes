@@ -9,3 +9,9 @@ commands:
   home:
     description: "homes command"
     permission: 'pocketmine.command.me'
+  sethome:
+    description: "sethome command"
+    permission: 'pocketmine.command.me'
+  homelist:
+    description: "homelist command"
+    permission: 'pocketmine.command.me'
