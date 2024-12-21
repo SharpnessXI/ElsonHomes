@@ -1,0 +1,11 @@
+name: ElsonHomes
+api: 5.0.0
+author: Elson / SharpnessXII
+version: 1.2.1.2
+
+# main: me.elsonelson.elsonhomes.Main
+main: sharpnessxii\MainHomePlugin
+commands:
+  home:
+    description: "homes command"
+    permission: 'pocketmine.command.me'
